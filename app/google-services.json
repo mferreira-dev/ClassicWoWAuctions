@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "992986507316",
+    "project_id": "classicauctions-24c11",
+    "storage_bucket": "classicauctions-24c11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992986507316:android:71163db906622c1df80261",
+        "android_client_info": {
+          "package_name": "pt.mferreira.classicauctions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992986507316-2g0d5fusn9195utde4k3lj95lfpknrdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJWdOryRzN2EcmHSjy3Llp4EkxL6g8Org"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992986507316-2g0d5fusn9195utde4k3lj95lfpknrdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

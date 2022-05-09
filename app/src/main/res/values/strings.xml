@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">WoW Classic - Auctions &amp; Leaderboards</string>
+    <string name="settings">Settings</string>
+    <string name="auctions">Auctions</string>
+    <string name="welcome">Welcome</string>
+    <string name="leaderboards">Leaderboards</string>
+
+    <string name="realm_index_eu_url">https://eu.api.blizzard.com/data/wow/connected-realm/index</string>
+    <string name="realm_index_us_url">https://us.api.blizzard.com/data/wow/connected-realm/index</string>
+    <string name="realm_id_eu_url">https://eu.api.blizzard.com/data/wow/connected-realm/%d</string>
+    <string name="realm_id_us_url">https://us.api.blizzard.com/data/wow/connected-realm/%d</string>
+
+    <string name="auctions_eu_url">https://eu.api.blizzard.com/data/wow/connected-realm/%d/auctions/%d</string>
+    <string name="auctions_us_url">https://us.api.blizzard.com/data/wow/connected-realm/%d/auctions/%d</string>
+
+    <string name="class_index_url">https://eu.api.blizzard.com/data/wow/playable-class/index</string>
+    <string name="class_id_url">https://eu.api.blizzard.com/data/wow/playable-class/%d</string>
+
+    <string name="eu_pvp_region_index">https://eu.api.blizzard.com/data/wow/pvp-region/index</string>
+    <string name="us_pvp_region_index">https://us.api.blizzard.com/data/wow/pvp-region/index</string>
+    <string name="eu_pvp_region_season_index">https://eu.api.blizzard.com/data/wow/pvp-region/%d/pvp-season/index</string>
+    <string name="us_pvp_region_season_index">https://us.api.blizzard.com/data/wow/pvp-region/%d/pvp-season/index</string>
+    <string name="eu_pvp_region_season_details">https://eu.api.blizzard.com/data/wow/pvp-region/%d/pvp-season/%d</string>
+    <string name="us_pvp_region_season_details">https://us.api.blizzard.com/data/wow/pvp-region/%d/pvp-season/%d</string>
+    <string name="eu_leaderboard_index">https://eu.api.blizzard.com/data/wow/pvp-region/%d/pvp-season/%d/pvp-leaderboard/index</string>
+    <string name="us_leaderboard_index">https://us.api.blizzard.com/data/wow/pvp-region/%d/pvp-season/%d/pvp-leaderboard/index</string>
+    <string name="eu_leaderboard_details">https://eu.api.blizzard.com/data/wow/pvp-region/%d/pvp-season/%d/pvp-leaderboard/%s</string>
+    <string name="us_leaderboard_details">https://us.api.blizzard.com/data/wow/pvp-region/%d/pvp-season/%d/pvp-leaderboard/%s</string>
+    <string name="eu_rewards_index">https://eu.api.blizzard.com/data/wow/pvp-region/%d/pvp-season/%d/pvp-reward/index</string>
+    <string name="us_rewards_index">https://us.api.blizzard.com/data/wow/pvp-region/%d/pvp-season/%d/pvp-reward/index</string>
+
+    <string name="dynamic_prog_eu">dynamic-classic-eu</string>
+    <string name="dynamic_prog_us">dynamic-classic-us</string>
+    <string name="dynamic_era_eu">dynamic-classic1x-eu</string>
+    <string name="dynamic_era_us">dynamic-classic1x-us</string>
+
+    <string name="static_prog_eu">static-classic-eu</string>
+    <string name="static_prog_us">static-classic-us</string>
+    <string name="static_era_eu">static-classic1x-eu</string>
+    <string name="static_era_us">static-classic1x-us</string>
+
+    <string name="intro">Setting up</string>
+    <string name="eu">Europe</string>
+    <string name="us">North America</string>
+    <string name="us2">America</string>
+    <string name="seasonal">Seasonal</string>
+    <string name="realm">Realm</string>
+    <string name="version">Version</string>
+    <string name="era">Era</string>
+    <string name="tbc">Burning Crusade</string>
+    <string name="classic_era">Classic Era</string>
+    <string name="progression">Progression</string>
+    <string name="prog_abv">Prog</string>
+    <string name="faction">Faction</string>
+    <string name="search">Search</string>
+    <string name="apply">Apply</string>
+    <string name="select_realm_region_first">Select a realm region first.</string>
+    <string name="select_others_first">Select a realm region and a PvP region first.</string>
+    <string name="clear">Clear</string>
+    <string name="update">Update</string>
+    <string name="alliance">Alliance</string>
+    <string name="horde">Horde</string>
+    <string name="neutral">Neutral</string>
+    <string name="loading">Loading...</string>
+    <string name="fetching_realms">Fetching realms...</string>
+    <string name="fetching_leaderboards_from_cache">Fetching cached leaderboard...</string>
+    <string name="fetching_leaderboards_from_server">Fetching and caching leaderboard from server, this may take a few seconds for larger regions....</string>
+    <string name="fetching_auctions_from_cache">Fetching cached auctions...</string>
+    <string name="fetching_auctions_from_server">Fetching and caching auctions from server, this may take a few seconds for larger realms....</string>
+    <string name="lookup_item">Type an item\'s English name...</string>
+    <string name="keyword">Keyword</string>
+    <string name="category">Category</string>
+    <string name="setup_filters">Setup filters to get started.</string>
+    <string name="no_results">No results.</string>
+    <string name="realm_region">Realm Region</string>
+    <string name="pvp_region">PvP Region</string>
+    <string name="season">Season</string>
+    <string name="alliance_upper">ALLIANCE</string>
+    <string name="horde_upper">HORDE</string>
+    <string name="no_members">No members.</string>
+
+    <string name="realm_and_region">%1$s (%2$s)</string>
+    <string name="realm_type">%1$s-%2$s</string>
+    <string name="pvp_region_id">Region %1d</string>
+    <string name="season_id">Season %1d</string>
+    <string name="bracket_and_start">(%s) %s</string>
+    <string name="bracket_start_end">(%s) %s to %s</string>
+
+    <string name="item_category_concat">%1$s (%2$s)</string>
+    <string name="bid">Bid:</string>
+    <string name="buyout">Buyout:</string>
+    <string name="item_buyout_concat">Buyout: %1$s</string>
+    <string name="item_duration_concat">Duration: %1$s</string>
+    <string name="x_auctions_found">%1$d auctions found.</string>
+
+    <string name="som_notice">SoM servers will always be treated as \"Era\" realms no matter which option is selected.</string>
+
+    <string name="navigate_to_auctions">Browse auctions</string>
+    <string name="navigate_to_leaderboards">Check PvP leaderboards</string>
+
+    <string name="last_auction_auctions_file">last_auction_auctions.json</string>
+    <string name="last_auction_items_file">last_auction_items.json</string>
+    <string name="last_auction_realm_file">last_auction_realm.json</string>
+
+    <string name="team_games_played">G: %1d</string>
+    <string name="team_wins">W: %1d</string>
+    <string name="team_losses">D: %1d</string>
+
+    <string name="general">General</string>
+    <string name="theme">Theme</string>
+    <string name="theme_key">theme</string>
+    <string name="night_mode_key">night mode</string>
+    <string name="night_mode">Night mode</string>
+    <string name="color_scheme">Color scheme</string>
+</resources>

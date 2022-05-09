@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    android:label="AuctionsFragment"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="pt.mferreira.classicauctions.presentation.welcome.WelcomeFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_welcomeFragment_to_auctionsFragment"
+            app:destination="@id/auctionsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_pvpFragment"
+            app:destination="@id/pvpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/auctionsFragment"
+        android:name="pt.mferreira.classicauctions.presentation.auctions.AuctionsFragment"
+        android:label="@string/auctions" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="pt.mferreira.classicauctions.presentation.settings.SettingsFragment"
+        android:label="@string/settings" />
+    <fragment
+        android:id="@+id/pvpFragment"
+        android:name="pt.mferreira.classicauctions.presentation.pvp.PvPFragment"
+        android:label="@string/leaderboards" />
+</navigation>

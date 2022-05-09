@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_auction_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp">
+
+        <ImageView
+            android:id="@+id/row_auction_media_icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="#f00" />
+
+        <TextView
+            android:id="@+id/row_auction_name_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/row_auction_media_icon"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Thunderfury, Blessed Blade of the Windseeker" />
+
+        <TextView
+            android:id="@+id/row_auction_category_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/row_auction_name_label"
+            app:layout_constraintTop_toBottomOf="@id/row_auction_name_label"
+            tools:text="Sword (1H)" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row_auction_bid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@id/row_auction_duration_label"
+            app:layout_constraintTop_toBottomOf="@id/row_auction_category_label">
+
+            <TextView
+                android:id="@+id/row_auction_bid_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bid"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/row_auction_bid_gold_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_bid_label"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="150" />
+
+            <ImageView
+                android:id="@+id/row_auction_bid_gold_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/gold_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_bid_gold_value"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/row_auction_bid_silver_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_bid_gold_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="78" />
+
+            <ImageView
+                android:id="@+id/row_auction_bid_silver_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/silver_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_bid_silver_value"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/row_auction_bid_copper_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_bid_silver_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="11" />
+
+            <ImageView
+                android:id="@+id/row_auction_bid_copper_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/copper_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_bid_copper_value"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row_auction_buyout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/row_auction_duration_label"
+            app:layout_constraintRight_toRightOf="@id/row_auction_duration_label"
+            app:layout_constraintTop_toBottomOf="@id/row_auction_bid">
+
+            <TextView
+                android:id="@+id/row_auction_buyout_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buyout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/row_auction_buyout_gold_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_buyout_label"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="150" />
+
+            <ImageView
+                android:id="@+id/row_auction_buyout_gold_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/gold_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_buyout_gold_value"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/row_auction_buyout_silver_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_buyout_gold_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="78" />
+
+            <ImageView
+                android:id="@+id/row_auction_buyout_silver_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/silver_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_buyout_silver_value"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/row_auction_buyout_copper_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_buyout_silver_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="11" />
+
+            <ImageView
+                android:id="@+id/row_auction_buyout_copper_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/copper_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/row_auction_buyout_copper_value"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/row_auction_duration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="Duration: Very long" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toBottomOf="@id/row_auction_category_label"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/row_auction_buyout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/row_auction_label_realm_name"
+                app:layout_constraintBottom_toTopOf="@id/row_auction_label_realm_details"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:text="Mirage Raceway [Prog]"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/row_auction_label_realm_details"
+                tools:text="EU Horde"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
